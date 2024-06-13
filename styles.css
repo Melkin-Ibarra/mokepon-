@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'yatra';
+  src: url("YatraOne-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+    background-color:#FFCC70;
+    color: #22668D;
+    font-family: "yatra";
+    font-size: 20px;
+    user-select: none; 
+}
+h1{
+    text-align: center;
+    font-size: 82px;
+    color:#22668D;
+}
+
+h2{
+    font-size: 24px;
+}
+
+button{
+    font-family: "yatra";
+    font-size: 24px;
+    color:white;
+    background-color: #22668D;
+    border-radius: 10px;
+}
+
+button:hover{
+    color:aqua;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #8ECDDD;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 800px;
+    height: 550px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: -110px;
+}
+
+#seleccionar-ataque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #8ECDDD;
+    border: 1px solid #22668D;
+    border-radius: 10px;
+    width: 800px;
+    height: 550px;
+    padding: 50px;
+    margin:0 auto;
+    margin-top: -110px;
+    text-align: center;
+}
+
+#seleccionar-ataque div{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+#seleccionar-ataque div div{
+    margin: 10px;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFADD;
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas{
+    border: 2px solid white;
+}
+
+#tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+}
+
+#tarjetas img:hover {
+    cursor: pointer;
+}
+
+#tarjetas img{
+    width: 200px;
+}
+
+label{
+    width: 200px;
+    height: 300px;
+    padding-top: 20px;
+    background-color: #FFFADD;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+label:hover{
+    width: 210px;
+    height: 310px;
+    transition: 0.1s;
+}
+#consola{
+    margin:0 auto;
+    font-family: monospace;
+    color: black;
+    font-size: 12px;
+}
+
+#divReiniciar{
+    position: fixed;
+    z-index: 100;
+    margin-left: 35%;
+    margin-top: -40%;
+    background-color: gray;
+    width: 500px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition-delay: 0.5s;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    border: solid 3px ;
+}
+
+
+

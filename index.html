@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Pokemon 🔥💧🌱</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+		<h1> Mokepon! </h1>
+        <section id="seleccionar-mascota">
+            <h2>Elije tu mascota</h2>
+            <div id="tarjetas">
+                <!-- Aqui van los mokepones generados por javascript -->
+            </div>
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+        <section id="ver-mapa">
+            <h2>Recorre el mapa con tu Mokepon</h2>
+            <canvas id="mapa"></canvas>
+            <button onmousedown="moverArriba()" onmouseup="detenerMokepon()">Arriba</button>
+            <button onmousedown="moverDerecha()" onmouseup="detenerMokepon()">Derecha</button>
+            <button onmousedown="moverAbajo()" onmouseup="detenerMokepon()">Abajo</button>
+            <button onmousedown="moverIzquierda()" onmouseup="detenerMokepon()">Izquierda</button>
+        </section>
+        <section id="seleccionar-ataque">
+            <div>
+                <div>
+                    <p><span id="mascota-jugador">mascota</span></p>
+                    <img src="" id="mascota-seleccionada-jugador" alt="Tu pokemon" />
+                    <p><span id="vidas-jugador">0</span> Victorias</p>
+                </div>
+                <div>
+                    <p><span id="mascota-enemigo">mascota</span></p>
+                    <img src="" id="mascota-seleccionada-enemigo" alt="Pokemon enemigo" />
+                    <p><span id="vidas-enemigo">0</span> Victorias</p>
+                </div>
+            </div>
+            <h2>Elije tu ataque</h2>    
+        <div id="ataques-Jugador">
+            <!-- Aqui van los ataques generados por javascript-->
+        </div>
+        </section>
+        <section id="consola">
+            <p>Consola de comandos, ver 0.96</p>
+        </section>
+        <div id="divReiniciar">
+            <p>El juego ha terminado</p>
+            <p id="ultimo-resultado"></p>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+        <script src="Javascript/mokepon.js"></script>
+	</body>
+</html>
